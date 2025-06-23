@@ -266,175 +266,155 @@
     <section id="projects" class="projects">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-carousel">
-                <button class="carousel-btn prev-btn" id="prevBtn">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <div class="carousel-container">
-                    <div class="carousel-track" id="carouselTrack">
-                        <div class="project-card">
-                            <div class="project-image">
-                                <i class="fas fa-brain"></i>
-                            </div>
-                            <div class="project-content">
-                                <h3>CNN Image Classification</h3>
-                                <p>Implemented and compared different CNN architectures (LeNet, custom CNN, ResNet18) for image classification on CIFAR-10 dataset using PyTorch. Includes training, evaluation, and visualization tools.</p>
-                                <div class="project-tech">
-                                    <span>PyTorch</span>
-                                    <span>CNN</span>
-                                    <span>ResNet</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://github.com/Vladislav-Veselov/image_classification" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
-                                </div>
-                            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>CNN Image Classification</h3>
+                        <p>Implemented and compared different CNN architectures (LeNet, custom CNN, ResNet18) for image classification on CIFAR-10 dataset using PyTorch. Includes training, evaluation, and visualization tools.</p>
+                        <div class="project-tech">
+                            <span>PyTorch</span>
+                            <span>CNN</span>
+                            <span>ResNet</span>
                         </div>
-                        <div class="project-card">
-                            <div class="project-image">
-                                <i class="fas fa-music"></i>
-                            </div>
-                            <div class="project-content">
-                                <h3>DL Audio Synthesis</h3>
-                                <p>Bachelor thesis project creating believable variations of short sound effects. Features Bayesian Granular Synthesizer, Autoencoder architecture, and HiFi-GAN fine-tuning for real-time audio generation.</p>
-                                <div class="project-tech">
-                                    <span>Python</span>
-                                    <span>PyTorch</span>
-                                    <span>Autoencoder</span>
-                                    <span>HiFi-GAN</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://github.com/Vladislav-Veselov/BA_code" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-image">
-                                <i class="fas fa-gamepad"></i>
-                            </div>
-                            <div class="project-content">
-                                <h3>Blackjack RL Agent</h3>
-                                <p>Reinforcement learning agent that learns to play Blackjack using Q-learning. Includes training framework, interactive play mode, and performance benchmarking with Gymnasium environment.</p>
-                                <div class="project-tech">
-                                    <span>Q-Learning</span>
-                                    <span>Gymnasium</span>
-                                    <span>Python</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://github.com/Vladislav-Veselov/blackjack_reinf_learning" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-image">
-                                <i class="fas fa-crop"></i>
-                            </div>
-                            <div class="project-content">
-                                <h3>UNet Image Segmentation</h3>
-                                <p>PyTorch implementation of UNet for semantic image segmentation on Carvana dataset. Features modified architecture, data augmentation, validation with Dice/IoU metrics, and GPU support.</p>
-                                <div class="project-tech">
-                                    <span>PyTorch</span>
-                                    <span>UNet</span>
-                                    <span>Segmentation</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://github.com/Vladislav-Veselov/UNet" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-image">
-                                <i class="fas fa-times"></i>
-                            </div>
-                            <div class="project-content">
-                                <h3>TicTacToe AI</h3>
-                                <p>Python implementation of TicTacToe with Pygame GUI featuring single-player mode against AI. Includes MVC architecture, unit tests, performance profiling, and minimax algorithm implementation.</p>
-                                <div class="project-tech">
-                                    <span>Python</span>
-                                    <span>Pygame</span>
-                                    <span>Minimax</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://github.com/Vladislav-Veselov/TicTacToe" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-image">
-                                <i class="fas fa-gamepad"></i>
-                            </div>
-                            <div class="project-content">
-                                <h3>Spellrift</h3>
-                                <p>Dark fantasy platformer game prototype built with Godot engine. Features HTML5 deployment, platformer mechanics, and interactive gameplay. Study project demonstrating game development skills.</p>
-                                <div class="project-tech">
-                                    <span>Godot</span>
-                                    <span>HTML5</span>
-                                    <span>Platformer</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="https://vladislav-veselov.itch.io/spellrift" class="project-link" target="_blank"><i class="fas fa-gamepad"></i> Play Game</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-image">
-                                <i class="fas fa-utensils"></i>
-                            </div>
-                            <div class="project-content">
-                                <h3>Cooking Recipes Management System</h3>
-                                <p>Full-stack web application for managing cooking recipes. Led as Project Manager. Implemented unit tests, Selenium automation testing, CI/CD pipeline, and Docker containerization for deployment.</p>
-                                <div class="project-tech">
-                                    <span>Spring Boot</span>
-                                    <span>React</span>
-                                    <span>MongoDB</span>
-                                    <span>Docker</span>
-                                    <span>CI/CD</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-image">
-                                <i class="fas fa-robot"></i>
-                            </div>
-                            <div class="project-content">
-                                <h3>NVIDIA JetBot Gesture Recognition</h3>
-                                <p>Implementing gesture recognition and autonomous navigation. Features ResNet-based collision avoidance, object tracking, and real-time gesture classification for robot control.</p>
-                                <div class="project-tech">
-                                    <span>NVIDIA Jetson</span>
-                                    <span>ResNet</span>
-                                    <span>OpenCV</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-card">
-                            <div class="project-image">
-                                <i class="fas fa-route"></i>
-                            </div>
-                            <div class="project-content">
-                                <h3>TurtleBot 2x2 Maze Solver</h3>
-                                <p>Autonomous maze navigation system using TurtleBot with state machine architecture. Implements laser sensor noise removal using sliding window techniques and pathfinding algorithms for 2x2 maze environments.</p>
-                                <div class="project-tech">
-                                    <span>ROS</span>
-                                    <span>State Machine</span>
-                                    <span>Python</span>
-                                </div>
-                                <div class="project-links">
-                                    <a href="#" class="project-link"><i class="fab fa-github"></i> Code</a>
-                                </div>
-                            </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Vladislav-Veselov/image_classification" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-btn next-btn" id="nextBtn">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>DL Audio Synthesis</h3>
+                        <p>Bachelor thesis project creating believable variations of short sound effects. Features Bayesian Granular Synthesizer, Autoencoder architecture, and HiFi-GAN fine-tuning for real-time audio generation.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>PyTorch</span>
+                            <span>Autoencoder</span>
+                            <span>HiFi-GAN</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Vladislav-Veselov/BA_code" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Blackjack RL Agent</h3>
+                        <p>Reinforcement learning agent that learns to play Blackjack using Q-learning. Includes training framework, interactive play mode, and performance benchmarking with Gymnasium environment.</p>
+                        <div class="project-tech">
+                            <span>Q-Learning</span>
+                            <span>Gymnasium</span>
+                            <span>Python</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Vladislav-Veselov/blackjack_reinf_learning" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-crop"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>UNet Image Segmentation</h3>
+                        <p>PyTorch implementation of UNet for semantic image segmentation on Carvana dataset. Features modified architecture, data augmentation, validation with Dice/IoU metrics, and GPU support.</p>
+                        <div class="project-tech">
+                            <span>PyTorch</span>
+                            <span>UNet</span>
+                            <span>Segmentation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Vladislav-Veselov/UNet" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>TicTacToe AI</h3>
+                        <p>Python implementation of TicTacToe with Pygame GUI featuring single-player mode against AI. Includes MVC architecture, unit tests, performance profiling, and minimax algorithm implementation.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pygame</span>
+                            <span>Minimax</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Vladislav-Veselov/TicTacToe" class="project-link" target="_blank"><i class="fab fa-github"></i> Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Spellrift</h3>
+                        <p>Dark fantasy platformer game prototype built with Godot engine. Features HTML5 deployment, platformer mechanics, and interactive gameplay. Study project demonstrating game development skills.</p>
+                        <div class="project-tech">
+                            <span>Godot</span>
+                            <span>HTML5</span>
+                            <span>Platformer</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://vladislav-veselov.itch.io/spellrift" class="project-link" target="_blank"><i class="fas fa-gamepad"></i> Play Game</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Cooking Recipes Management System</h3>
+                        <p>Full-stack web application for managing cooking recipes. Led as Project Manager. Implemented unit tests, Selenium automation testing, CI/CD pipeline, and Docker containerization for deployment.</p>
+                        <div class="project-tech">
+                            <span>Spring Boot</span>
+                            <span>React</span>
+                            <span>MongoDB</span>
+                            <span>Docker</span>
+                            <span>CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>NVIDIA JetBot Gesture Recognition</h3>
+                        <p>Implementing gesture recognition and autonomous navigation. Features ResNet-based collision avoidance, object tracking, and real-time gesture classification for robot control.</p>
+                        <div class="project-tech">
+                            <span>NVIDIA Jetson</span>
+                            <span>ResNet</span>
+                            <span>OpenCV</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-route"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>TurtleBot 2x2 Maze Solver</h3>
+                        <p>Autonomous maze navigation system using TurtleBot with state machine architecture. Implements laser sensor noise removal using sliding window techniques and pathfinding algorithms for 2x2 maze environments.</p>
+                        <div class="project-tech">
+                            <span>ROS</span>
+                            <span>State Machine</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="carousel-dots" id="carouselDots"></div>
         </div>
     </section>
 

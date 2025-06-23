@@ -302,4 +302,20 @@ const statsObserver = new IntersectionObserver((entries) => {
 const aboutStats = document.querySelector('.about-stats');
 if (aboutStats) {
     statsObserver.observe(aboutStats);
+}
+
+// Mobile Projects Toggle Function
+function toggleProject(index) {
+    const content = document.getElementById(`content-${index}`);
+    const toggleIcon = document.getElementById(`toggle-${index}`);
+    
+    if (content.classList.contains('expanded')) {
+        // Collapse
+        content.classList.remove('expanded');
+        toggleIcon.classList.remove('rotated');
+    } else {
+        // Expand
+        content.classList.add('expanded');
+        toggleIcon.classList.add('rotated');
+    }
 } 
