@@ -44,19 +44,34 @@ body {
 }
 
 .nav-logo a {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav-logo a:hover {
+    transform: scale(1.02);
+}
+
+.logo-image {
+    height: 40px;
+    width: auto;
+    transition: all 0.3s ease;
+}
+
+.logo-text {
     font-size: 1.4rem;
     font-weight: 700;
     color: #1e3a8a;
-    text-decoration: none;
-    transition: all 0.3s ease;
     font-family: 'Poppins', sans-serif;
     letter-spacing: 0.5px;
     text-transform: none;
 }
 
-.nav-logo a:hover {
+.nav-logo a:hover .logo-text {
     color: #3b82f6;
-    transform: scale(1.02);
 }
 
 .nav-menu {
@@ -298,7 +313,7 @@ body {
 
 /* About Section */
 .about {
-    padding: 6rem 0;
+    padding: 4rem 0;
     background: #f8fafc;
 }
 
@@ -374,7 +389,7 @@ body {
 
 /* Skills Section */
 .skills {
-    padding: 6rem 0;
+    padding: 4rem 0;
     background: white;
 }
 
@@ -425,7 +440,7 @@ body {
 
 /* Projects Section */
 .projects {
-    padding: 6rem 0;
+    padding: 4rem 0;
     background: #f8fafc;
 }
 
@@ -515,7 +530,7 @@ body {
 
 /* Contact Section */
 .contact {
-    padding: 6rem 0;
+    padding: 4rem 0;
     background: white;
 }
 
@@ -622,7 +637,7 @@ body {
 
 /* Experience Section */
 .experience {
-    padding: 6rem 0;
+    padding: 4rem 0;
     background: white;
 }
 
@@ -749,6 +764,14 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .logo-image {
+        height: 32px;
+    }
+    
+    .logo-text {
+        font-size: 1.2rem;
+    }
+    
     .hamburger {
         display: flex;
     }
@@ -768,6 +791,10 @@ body {
 
     .nav-menu.active {
         left: 0;
+    }
+
+    .hero {
+        padding-top: 80px;
     }
 
     .hero-container {
@@ -862,7 +889,7 @@ body {
     }
 
     .container {
-        padding: 0 10px;
+        padding: 0 20px;
     }
 
     .desktop-only {
@@ -894,6 +921,18 @@ body {
 }
 
 @media (max-width: 480px) {
+    .logo-image {
+        height: 28px;
+    }
+    
+    .logo-text {
+        font-size: 1rem;
+    }
+    
+    .hero {
+        padding-top: 80px;
+    }
+
     .hero-title {
         font-size: 2rem;
     }
@@ -903,7 +942,7 @@ body {
     }
 
     .container {
-        padding: 0 5px;
+        padding: 0 15px;
     }
 
     .project-card {
