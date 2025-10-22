@@ -318,4 +318,44 @@ function toggleProject(index) {
         content.classList.add('expanded');
         toggleIcon.classList.add('rotated');
     }
-} 
+}
+
+// Language Toggle Functionality
+let currentLanguage = 'en';
+
+function toggleLanguage() {
+    currentLanguage = currentLanguage === 'en' ? 'de' : 'en';
+    updateLanguage();
+    updateLanguageButton();
+}
+
+function updateLanguage() {
+    // Update all elements with data attributes
+    document.querySelectorAll('[data-en][data-de]').forEach(element => {
+        element.textContent = element.getAttribute(`data-${currentLanguage}`);
+    });
+    
+    // Update placeholders
+    document.querySelectorAll('[data-placeholder-en][data-placeholder-de]').forEach(element => {
+        element.placeholder = element.getAttribute(`data-placeholder-${currentLanguage}`);
+    });
+}
+
+function updateLanguageButton() {
+    const langText = document.getElementById('langText');
+    if (langText) {
+        langText.textContent = currentLanguage === 'en' ? 'DE' : 'EN';
+    }
+}
+
+// Initialize language functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const languageBtn = document.getElementById('languageBtn');
+    if (languageBtn) {
+        languageBtn.addEventListener('click', toggleLanguage);
+    }
+    
+    // Set initial language
+    updateLanguage();
+    updateLanguageButton();
+}); 

@@ -20,24 +20,30 @@
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link" data-en="Home" data-de="Startseite">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
+                    <a href="#about" class="nav-link" data-en="About" data-de="Über mich">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#experience" class="nav-link">Experience</a>
+                    <a href="#experience" class="nav-link" data-en="Experience" data-de="Erfahrung">Experience</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#skills" class="nav-link" data-en="Skills" data-de="Fähigkeiten">Skills</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#projects" class="nav-link" data-en="Projects" data-de="Projekte">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link" data-en="Contact" data-de="Kontakt">Contact</a>
                 </li>
             </ul>
+            <div class="language-toggle">
+                <button id="languageBtn" class="lang-btn">
+                    <i class="fas fa-globe"></i>
+                    <span id="langText">DE</span>
+                </button>
+            </div>
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -53,12 +59,14 @@
                 <h1 class="hero-title">
                     Vladislav Veselov
                 </h1>
-                <p class="hero-subtitle">AI Developer | Python | Computer Vision | NLP</p>
-                <p class="hero-description">
-                    Recent graduate with a Bachelor’s degree in Artificial Intelligence, experienced in deep learning frameworks and developing end-to-end AI solutions. Enthusiastic about computer vision, natural language processing, and cutting-edge AI technologies                </p>
+                <p class="hero-subtitle" data-en="AI Developer | Python | Computer Vision | NLP" data-de="KI-Entwickler | Python | Computer Vision | NLP">AI Developer | Python | Computer Vision | NLP</p>
+                <p class="hero-description" data-en="AI Software Engineer specialized in Machine Learning, Data Science, and full-cycle ML deployment. Experienced in building production-ready AI systems – from data preprocessing to deployment in cloud environments. Based in Germany, available immediately for relocation and full-time roles." data-de="KI-Softwareentwickler spezialisiert auf Machine Learning, Data Science und vollständige ML-Bereitstellung. Erfahren im Aufbau produktionsreifer KI-Systeme – von der Datenvorverarbeitung bis zur Bereitstellung in Cloud-Umgebungen. Ansässig in Deutschland, sofort verfügbar für Umzug und Vollzeitstellen.">
+                    AI Software Engineer specialized in Machine Learning, Data Science, and full-cycle ML deployment. Experienced in building production-ready AI systems – from data preprocessing to deployment in cloud environments.
+                    Based in Germany, available immediately for relocation and full-time roles.
+                </p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-primary" data-en="View My Work" data-de="Meine Arbeit ansehen">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary" data-en="Get In Touch" data-de="Kontakt aufnehmen">Get In Touch</a>
                 </div>
             </div>
             <div class="hero-image">
@@ -83,32 +91,32 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title" data-en="About Me" data-de="Über mich">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>
+                    <p data-en="I'm a recent graduate with a Bachelor's degree in Artificial Intelligence from Technische Hochschule Deggendorf, with a strong foundation in Python, Java, and deep learning frameworks. My passion lies in developing production-ready AI solutions, particularly in computer vision and natural language processing." data-de="Ich bin ein frischgebackener Absolvent mit einem Bachelor-Abschluss in Künstlicher Intelligenz von der Technischen Hochschule Deggendorf, mit einer soliden Grundlage in Python, Java und Deep-Learning-Frameworks. Meine Leidenschaft liegt in der Entwicklung produktionsreifer KI-Lösungen, insbesondere in Computer Vision und Natural Language Processing.">
                         I'm a recent graduate with a Bachelor's degree in Artificial Intelligence from Technische Hochschule Deggendorf,
                         with a strong foundation in Python, Java, and deep learning frameworks. My passion lies in developing
-                        end-to-end AI solutions, particularly in computer vision and natural language processing.
+                        production-ready AI solutions, particularly in computer vision and natural language processing.
                     </p>
-                    <p>
-                        I've worked on diverse projects ranging from tender document parsing systems to interior design 
+                    <p data-en="I've worked on diverse projects ranging from RAG systems to interior design classification models, always focusing on practical applications that solve real-world problems. I'm currently seeking full-time opportunities in software development and AI applications." data-de="Ich habe an verschiedenen Projekten gearbeitet, von RAG-Systemen bis hin zu Innenraumklassifizierungsmodellen, wobei ich mich immer auf praktische Anwendungen konzentriere, die reale Probleme lösen. Ich suche derzeit nach Vollzeitmöglichkeiten in der Softwareentwicklung und KI-Anwendungen.">
+                        I've worked on diverse projects ranging from RAG systems to interior design 
                         classification models, always focusing on practical applications that solve real-world problems. 
                         I'm currently seeking full-time opportunities in software development and AI applications.
                     </p>
                 </div>
                 <div class="about-image">
                     <div class="education-card">
-                        <h3>Education</h3>
+                        <h3 data-en="Education" data-de="Bildung">Education</h3>
                         <div class="education-item">
                             <h4>B.Sc. Artificial Intelligence</h4>
                             <p>Technische Hochschule Deggendorf • 2021-2025</p>
-                            <p>Completed</p>
+                            <p data-en="Completed" data-de="Abgeschlossen">Completed</p>
                         </div>
                         <div class="education-item">
                             <h4>B.Sc. Fundamental Informatics</h4>
                             <p>Lobachevsky University • 2020-2021</p>
-                            <p>1st Year Completed</p>
+                            <p data-en="1st Year Completed" data-de="1. Jahr abgeschlossen">1st Year Completed</p>
                         </div>
                     </div>
                 </div>
@@ -119,34 +127,20 @@
     <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title">Experience & Achievements</h2>
+            <h2 class="section-title" data-en="Experience & Achievements" data-de="Erfahrung & Erfolge">Experience & Achievements</h2>
             <div class="experience-grid">
                 <div class="experience-card">
                     <div class="experience-header">
                         <h3>NeuroBot</h3>
                         <span class="experience-date">Ongoing</span>
                     </div>
-                    <p class="experience-role">AI Developer – Independent Project</p>
-                    <p class="experience-description">Development of an AI-powered system that communicates with customers, operates based on the knowledge base of specific companies, and features adaptive settings and a personal user dashboard.</p>
+                    <p class="experience-role" data-en="Full-Stack Developer" data-de="Full-Stack Developer">Full-Stack Developer</p>
+                    <p class="experience-description" data-en="Development of an AI-powered LLM RAG system that communicates with customers, is based on company-specific knowledge bases, and provides adaptive settings as well as a personalized user dashboard. LangChain, Pinecone, PostgreSQL, Flask web development, deployment." data-de="Entwicklung eines KI-gestützten LLM RAG-Systems, das mit Kunden kommuniziert, auf den Wissensbasen spezifischer Unternehmen basiert und adaptive Einstellungen sowie ein persönliches Benutzer-Dashboard bietet. LangChain, Pinecone, PostgreSQL, Flask-Webentwicklung, Deployment.">Development of an AI-powered LLM RAG system that communicates with customers, is based on company-specific knowledge bases, and provides adaptive settings as well as a personalized user dashboard. LangChain, Pinecone, PostgreSQL, Flask web development, deployment.</p>
                     <div class="experience-tech">
-                        <span>Langchain</span>
-                        <span>NLP</span>
+                        <span>LangChain</span>
                         <span>Pinecone</span>
-                        <span>Web-development</span>
-                    </div>
-                </div>
-                <div class="experience-card">
-                    <div class="experience-header">
-                        <h3>TenderMind</h3>
-                        <span class="experience-date">Ongoing</span>
-                    </div>
-                    <p class="experience-role">AI Developer – Independent Project</p>
-                    <p class="experience-description">Developing a system to parse tender documents using computer vision and OpenAI platform for information extraction and analysis. Utilizes Pinecone vector database.</p>
-                    <div class="experience-tech">
-                        <span>Python</span>
-                        <span>OpenAI</span>
-                        <span>Computer Vision</span>
-                        <span>Pinecone</span>
+                        <span>PostgreSQL</span>
+                        <span>Flask</span>
                     </div>
                 </div>
                 <div class="experience-card">
@@ -154,13 +148,14 @@
                         <h3>Roomy Design</h3>
                         <span class="experience-date">07.2024 – 08.2024</span>
                     </div>
-                    <p class="experience-role">AI Developer – Independent Project</p>
-                    <p class="experience-description">Built an OpenAI-powered chatbot with company-specific knowledge, deployed via Flask on the company homepage. Integrated front-end and Telegram bot for notifications.</p>
+                    <p class="experience-role" data-en="Full-Stack Developer" data-de="Full-Stack Developer">Full-Stack Developer</p>
+                    <p class="experience-description" data-en="Development of a Python OpenAI-powered LLM chatbot with company-specific knowledge, deployed via Flask and currently in use on the company's homepage. Integration of a frontend with HTML/CSS/JavaScript as well as a Telegram bot for real-time notifications." data-de="Entwicklung eines python OpenAI-gestützten LLM Chatbots mit firmenspezifischem Wissen, bereitgestellt über Flask und derzeit auf der Firmen-Homepage im Einsatz. Integration eines Frontends mit HTML/CSS/JavaScript sowie eines Telegram-Bots für Echtzeit-Benachrichtigungen.">Development of a Python OpenAI-powered LLM chatbot with company-specific knowledge, deployed via Flask and currently in use on the company's homepage. Integration of a frontend with HTML/CSS/JavaScript as well as a Telegram bot for real-time notifications.</p>
                     <div class="experience-tech">
+                        <span>Python</span>
                         <span>OpenAI</span>
                         <span>Flask</span>
                         <span>HTML/CSS/JS</span>
-                        <span>Telegram API</span>
+                        <span>Telegram Bot</span>
                     </div>
                 </div>
                 <div class="experience-card">
@@ -168,13 +163,13 @@
                         <h3>B-plus</h3>
                         <span class="experience-date">04.2024 – 07.2024</span>
                     </div>
-                    <p class="experience-role">ML Engineer – Group Project</p>
-                    <p class="experience-description">Contributed to a university-led project detecting label errors in datasets. Led EDA, data preparation, and YOLOv9 training using BDD100K dataset.</p>
+                    <p class="experience-role" data-en="ML Engineer – Group Project" data-de="ML Engineer – Gruppenprojekt">ML Engineer – Group Project</p>
+                    <p class="experience-description" data-en="Collaboration on a university-led project for detecting label errors in datasets. Conducted exploratory analyses (EDA), data preprocessing, and YOLOv9 training in the university's deep learning laboratory. The BDD100K dataset was used." data-de="Mitarbeit an einem universitätsgeleiteten Projekt zur Erkennung von Label-Fehlern in Datensätzen. Durchführung explorativer Analysen, Datenaufbereitung und YOLOv9-Training im Deep-Learning-Labor der Universität. Verwendet wurde das BDD100K-Datenset.">Collaboration on a university-led project for detecting label errors in datasets. Conducted exploratory analyses (EDA), data preprocessing, and YOLOv9 training in the university's deep learning laboratory. The BDD100K dataset was used.</p>
                     <div class="experience-tech">
                         <span>YOLOv9</span>
                         <span>BDD100K</span>
                         <span>EDA</span>
-                        <span>Computer Vision</span>
+                        <span>Deep Learning</span>
                     </div>
                 </div>
                 <div class="experience-card">
@@ -182,31 +177,33 @@
                         <h3>eDom Online</h3>
                         <span class="experience-date">10.2023 – 02.2024</span>
                     </div>
-                    <p class="experience-role">AI Developer – Internship</p>
-                    <p class="experience-description">Developed and trained a custom AI model to classify interior designs using TensorFlow. Used ResNet-based architecture, Flask for web interface, and Docker for deployment.</p>
+                    <p class="experience-role" data-en="Data Scientist – Internship" data-de="Data Scientist – Praktikum">Data Scientist – Internship</p>
+                    <p class="experience-description" data-en="Development and optimization of a custom AI model (neural network) for classifying interior spaces by design using TensorFlow. Visualization and deployment. ResNet-based architecture, web interface integration (Flask), CI/CD, Docker for deployment on Microsoft Azure." data-de="Entwicklung und Optimierung eines eigenen KI-Modells und Pipeline zur Klassifikation von Innenräumen nach Design mit TensorFlow. Visualisierung und Bereitstellung. ResNet-basierte Architektur, Web-Interface Integration (Flask), CI/CD, Docker für Deployment on Microsoft Azure.">Development and optimization of a custom AI model (neural network) for classifying interior spaces by design using TensorFlow. Visualization and deployment. ResNet-based architecture, web interface integration (Flask), CI/CD, Docker for deployment on Microsoft Azure.</p>
                     <div class="experience-tech">
                         <span>TensorFlow</span>
                         <span>ResNet</span>
                         <span>Flask</span>
+                        <span>CI/CD</span>
                         <span>Docker</span>
+                        <span>Azure</span>
                     </div>
                 </div>
             </div>
             <div class="achievements-section">
-                <h3>Notable Achievements</h3>
+                <h3 data-en="Notable Achievements" data-de="Bemerkenswerte Erfolge">Notable Achievements</h3>
                 <div class="achievements-grid">
                     <div class="achievement-item">
                         <i class="fas fa-trophy"></i>
                         <div>
                             <h4>fuT3ch Symposium Speaker (2025)</h4>
-                            <p>Presented HPC frameworks research in collaboration with MPCDF</p>
+                            <p data-en="Presented HPC frameworks research in collaboration with MPCDF" data-de="Präsentation von HPC-Framework-Forschung in Zusammenarbeit mit MPCDF">Presented HPC frameworks research in collaboration with MPCDF</p>
                         </div>
                     </div>
                     <div class="achievement-item">
                         <i class="fas fa-medal"></i>
                         <div>
                             <h4>Innovation Challenge 2025 - 4th Place</h4>
-                            <p>By Ecosystem Bayern. "DeepLog" – a preventive data analytics agent</p>
+                            <p data-en="By Ecosystem Bayern. \"DeepLog\" – a preventive data analytics agent" data-de="Von Ecosystem Bayern. \"DeepLog\" – ein präventiver Datenanalyse-Agent">By Ecosystem Bayern. "DeepLog" – a preventive data analytics agent</p>
                         </div>
                     </div>
                 </div>
@@ -217,14 +214,18 @@
     <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
+            <h2 class="section-title" data-en="Skills & Technologies" data-de="Fähigkeiten & Technologien">Skills & Technologies</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Programming Languages</h3>
+                    <h3 data-en="Programming Languages" data-de="Programmiersprachen">Programming Languages</h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <i class="fab fa-python"></i>
                             <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>R</span>
                         </div>
                         <div class="skill-item">
                             <i class="fab fa-java"></i>
@@ -233,7 +234,7 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>ML/AI Tools</h3>
+                    <h3 data-en="ML/AI Tools" data-de="ML/KI-Tools">ML/AI Tools</h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <i class="fas fa-brain"></i>
@@ -254,11 +255,15 @@
                     </div>
                 </div>
                 <div class="skill-category">
-                    <h3>Data & Development</h3>
+                    <h3 data-en="Data & Development" data-de="Daten & Entwicklung">Data & Development</h3>
                     <div class="skill-items">
                         <div class="skill-item">
                             <i class="fas fa-database"></i>
                             <span>NumPy/Pandas</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
                         </div>
                         <div class="skill-item">
                             <i class="fab fa-git-alt"></i>
@@ -281,7 +286,7 @@
     <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title" data-en="Featured Projects" data-de="Ausgewählte Projekte">Featured Projects</h2>
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
@@ -437,11 +442,11 @@
     <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <h2 class="section-title" data-en="Get In Touch" data-de="Kontakt aufnehmen">Get In Touch</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>I'm currently seeking full-time opportunities in software development and AI applications. Feel free to reach out for collaborations or opportunities!</p>
+                    <h3 data-en="Let's Connect" data-de="Lassen Sie uns vernetzen">Let's Connect</h3>
+                    <p data-en="I'm currently seeking full-time opportunities in software development and AI applications. Feel free to reach out for collaborations or opportunities!" data-de="Ich suche derzeit nach Vollzeitmöglichkeiten in der Softwareentwicklung und KI-Anwendungen. Zögern Sie nicht, sich für Kooperationen oder Möglichkeiten zu melden!">I'm currently seeking full-time opportunities in software development and AI applications. Feel free to reach out for collaborations or opportunities!</p>
                     <div class="contact-items">
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
@@ -449,7 +454,7 @@
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
-                            <span>+49 174 7550224</span>
+                            <span>+49 17658353987</span>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
@@ -463,18 +468,18 @@
                 </div>
                 <form class="contact-form" action="https://formspree.io/f/xanjpdpn" method="POST" id="contactForm">
                     <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="text" name="name" placeholder="Your Name" data-placeholder-en="Your Name" data-placeholder-de="Ihr Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="email" name="email" placeholder="Your Email" data-placeholder-en="Your Email" data-placeholder-de="Ihre E-Mail" required>
                     </div>
                     <div class="form-group">
-                        <input type="text" name="subject" placeholder="Subject" required>
+                        <input type="text" name="subject" placeholder="Subject" data-placeholder-en="Subject" data-placeholder-de="Betreff" required>
                     </div>
                     <div class="form-group">
-                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <textarea name="message" placeholder="Your Message" data-placeholder-en="Your Message" data-placeholder-de="Ihre Nachricht" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <button type="submit" class="btn btn-primary" data-en="Send Message" data-de="Nachricht senden">Send Message</button>
                 </form>
             </div>
         </div>

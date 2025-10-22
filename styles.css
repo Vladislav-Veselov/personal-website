@@ -27,11 +27,11 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
+    background: white;
     z-index: 1000;
     padding: 1rem 0;
     transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-container {
@@ -119,6 +119,37 @@ body {
     background-color: #333;
     margin: 3px 0;
     transition: 0.3s;
+}
+
+/* Language Toggle */
+.language-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #f8fafc;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #374151;
+}
+
+.lang-btn:hover {
+    background: #dbeafe;
+    border-color: #1e3a8a;
+    color: #1e3a8a;
+}
+
+.lang-btn i {
+    font-size: 1rem;
 }
 
 /* Hero Section */
@@ -774,6 +805,16 @@ body {
     
     .hamburger {
         display: flex;
+    }
+
+    .language-toggle {
+        order: -1;
+        margin-right: 1rem;
+    }
+
+    .lang-btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
     }
 
     .nav-menu {
